@@ -4,9 +4,9 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:farage_client_dart/error/garage_error.dart';
-import 'package:farage_client_dart/request_body.dart';
-import 'package:farage_client_dart/user_authenticator.dart';
+import 'package:garage_client_dart/error/garage_error.dart';
+import 'package:garage_client_dart/request_body.dart';
+import 'package:garage_client_dart/user_authenticator.dart';
 
 class GarageClient {
   UserAuthenticator _userAuthenticator;
