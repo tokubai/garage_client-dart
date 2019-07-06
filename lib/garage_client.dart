@@ -73,7 +73,7 @@ class GarageClient {
   static Future<String> purseToJson(HttpClientResponse response) async {
     var json = "";
     await for (var contents
-        in response.transform(utf8.decoder).transform(const LineSplitter())) {
+        in utf8.decoder.bind(response).transform(const LineSplitter())) {
       print(contents);
       json += contents;
     }
